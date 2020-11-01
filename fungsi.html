@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fungsi JS</title>
+</head>
+
+<body>
+
+    <script>
+        //cara biasa
+        function namaFungsiBiasa() {
+            alert('Ini Cara Nulis Biasa');
+        }
+        // namaFungsi();
+
+        //cara nulis ekpresi
+        var namaFungsiEkpresi = function () {
+            alert('ini cara nulis ekpresi')
+        }
+        // namaFungsiEkpresi();
+
+        //cara nulis pake tanda panah
+        // cara nulis ini muncul setalah ES6 Rilis
+        // cara nulis seperti ini sering dipake karna lebih sederhana
+        var namaFunhgiArah = () => {
+            alert('ini cara nulis pake arah panah');
+        }
+
+        //atau tapi jika statmentnya cuma satu baris bisa dipake
+        var pakeArah = () => alert('ini juga bisa');
+        // namaFunhgiArah();
+
+        //cara nulis pake kontruktor
+        var namaFungsi = new Function('alert("ini pake kostruktor");');
+        // namaFungsi();
+        //cara nulis diatas jarang dipake karena statmentnya dijadikan String yang mempengaruhi kinerja JS
+    </script>
+</body>
+
+</html>
